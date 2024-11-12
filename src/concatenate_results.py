@@ -16,10 +16,8 @@ def parse_args():
             "identification",
             "regression_intelligence",
             "typicality",
-            "icc",
             "classification",
             "camcan_age_prediction",
-            "camcan_age_prediction_extended_confounds",
         ],
     )
     return parser.parse_args()
