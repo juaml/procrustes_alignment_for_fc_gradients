@@ -1,0 +1,22 @@
+000 (3357406.000.000) 2024-05-17 07:53:32 Job submitted from host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+    DAG Node: run384
+...
+001 (3357406.000.000) 2024-05-17 07:54:51 Job executing on host: <10.0.9.9:9618?addrs=10.0.9.9-9618&alias=cpu9.htc.inm7.de&noUDP&sock=startd_3529_2dcf>
+...
+005 (3357406.000.000) 2024-05-17 07:55:51 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:33, Sys 0 00:00:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:33, Sys 0 00:00:17  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1048576   3770972 
+	   Memory (MB)          :      123    20480     20480 
+
+	Job terminated of its own accord at 2024-05-17T05:55:51Z with exit-code 1.
+...

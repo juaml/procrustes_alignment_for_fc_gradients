@@ -1,0 +1,30 @@
+000 (3355652.000.000) 2024-05-16 14:53:21 Job submitted from host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+...
+001 (3355652.000.000) 2024-05-16 14:53:21 Job executing on host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+...
+005 (3355652.000.000) 2024-05-16 18:41:21 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (3357405.000.000) 2024-05-17 07:53:31 Job submitted from host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+...
+001 (3357405.000.000) 2024-05-17 07:53:31 Job executing on host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+...
+005 (3357405.000.000) 2024-05-17 07:55:52 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...

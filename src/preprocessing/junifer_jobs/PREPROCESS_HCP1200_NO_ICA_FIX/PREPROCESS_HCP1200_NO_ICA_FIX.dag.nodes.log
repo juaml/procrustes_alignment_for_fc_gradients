@@ -1,0 +1,57 @@
+000 (3009821.000.000) 2024-03-20 07:42:40 Job submitted from host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+    DAG Node: run712
+...
+000 (3009822.000.000) 2024-03-20 07:42:40 Job submitted from host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+    DAG Node: run728
+...
+000 (3009823.000.000) 2024-03-20 07:42:40 Job submitted from host: <10.0.8.14:9618?addrs=10.0.8.14-9618&alias=head2.htc.inm7.de&noUDP&sock=schedd_4571_e77e>
+    DAG Node: run1010
+...
+001 (3009822.000.000) 2024-03-20 07:43:00 Job executing on host: <10.0.9.43:9618?addrs=10.0.9.43-9618&alias=cpu43.htc.inm7.de&noUDP&sock=startd_4089_4ad8>
+...
+001 (3009821.000.000) 2024-03-20 07:43:00 Job executing on host: <10.0.9.44:9618?addrs=10.0.9.44-9618&alias=cpu44.htc.inm7.de&noUDP&sock=startd_3823_d6a7>
+...
+001 (3009823.000.000) 2024-03-20 07:43:00 Job executing on host: <10.0.9.37:9618?addrs=10.0.9.37-9618&alias=cpu37.htc.inm7.de&noUDP&sock=startd_3036_059e>
+...
+004 (3009822.000.000) 2024-03-20 07:45:09 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:06, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1048576  24829448 
+	   Memory (MB)          :      165    20480     20480 
+...
+004 (3009823.000.000) 2024-03-20 07:45:09 Job was evicted.
+	(0) CPU times
+		Usr 0 00:01:02, Sys 0 00:00:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1048576   3869108 
+	   Memory (MB)          :    14436    20480     20480 
+...
+009 (3009822.000.000) 2024-03-20 07:45:09 Job was aborted.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 3009820> fired when job (3009820.0) was removed
+...
+009 (3009823.000.000) 2024-03-20 07:45:09 Job was aborted.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 3009820> fired when job (3009820.0) was removed
+...
+004 (3009821.000.000) 2024-03-20 07:45:09 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:08, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.01        1         1 
+	   Disk (KB)            :     1     1048576  24829498 
+	   Memory (MB)          :   165       20480     20480 
+...
+009 (3009821.000.000) 2024-03-20 07:45:09 Job was aborted.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 3009820> fired when job (3009820.0) was removed
+...

@@ -1,0 +1,134 @@
+workdir: /tmp
+
+datagrabber:
+  kind: DataladAOMICPIOP1
+  tasks:
+    - restingstate
+
+preprocess:
+  kind: fMRIPrepConfoundRemover
+  detrend: true
+  standardize: true
+  strategy:
+    motion: full
+    wm_csf: full
+    global_signal: full
+  low_pass: 0.08
+  high_pass: 0.01
+  masks:
+    - inherit
+    - compute_epi_mask
+    - threshold: 0
+
+
+storage:
+  kind: HDF5FeatureStorage
+  uri: 
+    /data/project/identification_prediction/projects/gradients_identification_alignment/data/aomic_piop1/aomic_piop1.hdf5
+
+
+markers:
+
+  - name: parccortical-Schaefer100x17FSLMNI_marker-timeseries
+    kind: ParcelAggregation
+    parcellation: Schaefer100x17
+    method: mean
+    on: BOLD
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer100x17FSLMNI_marker-empiricalFC
+    kind: FunctionalConnectivityParcels
+    parcellation: Schaefer100x17
+    cor_method: correlation
+    cor_method_params:
+      empirical: true
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer200x17FSLMNI_marker-timeseries
+    kind: ParcelAggregation
+    method: mean
+    parcellation: Schaefer200x17
+    on: BOLD
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer200x17FSLMNI_marker-empiricalFC
+    kind: FunctionalConnectivityParcels
+    parcellation: Schaefer200x17
+    cor_method: correlation
+    cor_method_params:
+      empirical: true
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer400x17FSLMNI_marker-timeseries
+    kind: ParcelAggregation
+    method: mean
+    parcellation: Schaefer400x17
+    on: BOLD
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer400x17FSLMNI_marker-empiricalFC
+    kind: FunctionalConnectivityParcels
+    parcellation: Schaefer400x17
+    cor_method: correlation
+    cor_method_params:
+      empirical: true
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer100x7FSLMNI_marker-timeseries
+    kind: ParcelAggregation
+    method: mean
+    parcellation: Schaefer100x7
+    on: BOLD
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer100x7FSLMNI_marker-empiricalFC
+    kind: FunctionalConnectivityParcels
+    parcellation: Schaefer100x7
+    cor_method: correlation
+    cor_method_params:
+      empirical: true
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer200x7FSLMNI_marker-timeseries
+    kind: ParcelAggregation
+    method: mean
+    parcellation: Schaefer200x7
+    on: BOLD
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer200x7FSLMNI_marker-empiricalFC
+    kind: FunctionalConnectivityParcels
+    parcellation: Schaefer200x7
+    cor_method: correlation
+    cor_method_params:
+      empirical: true
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer400x7FSLMNI_marker-timeseries
+    kind: ParcelAggregation
+    method: mean
+    parcellation: Schaefer400x7
+    on: BOLD
+    masks:
+      - inherit
+
+  - name: parccortical-Schaefer400x7FSLMNI_marker-empiricalFC
+    kind: FunctionalConnectivityParcels
+    parcellation: Schaefer400x7
+    cor_method: correlation
+    cor_method_params:
+      empirical: true
+    masks:
+      - inherit
+
+
