@@ -112,7 +112,7 @@ def plot_correlation_timeseries(ax):
         / ".."
         / "results"
         / "fd_correlations"
-        / f"camcan_Schaefer400_correlations_with_FD.csv"
+        / "camcan_Schaefer400_correlations_with_FD.csv"
     )
     data = pd.read_csv(path, index_col=0)
 
@@ -194,9 +194,9 @@ def main():
         ax_d.set_ylim(-0.6, 0.1)
 
         outpath = Path("..") / ".." / "figures" / "paper"
-        fig.savefig(outpath / f"paper_figure_5.png")
-        fig.savefig(outpath / f"paper_figure_5.svg")
-        fig.savefig(outpath / f"paper_figure_5.pdf")
+        fig.savefig(outpath / "paper_figure_5.png")
+        fig.savefig(outpath / "paper_figure_5.svg")
+        fig.savefig(outpath / "paper_figure_5.pdf")
 
 
 if __name__ == "__main__":

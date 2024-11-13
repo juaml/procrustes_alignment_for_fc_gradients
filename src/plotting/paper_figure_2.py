@@ -6,7 +6,6 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-from seabornxt import stripboxplot
 from scipy.stats import pearsonr
 
 
@@ -222,9 +221,9 @@ def main():
         ax_d.set_ylim(-0.8, 0)
 
         outpath = Path("..") / ".." / "figures" / "paper"
-        fig.savefig(outpath / f"paper_figure_2.png")
-        fig.savefig(outpath / f"paper_figure_2.svg")
-        fig.savefig(outpath / f"paper_figure_2.pdf")
+        fig.savefig(outpath / "paper_figure_2.png")
+        fig.savefig(outpath / "paper_figure_2.svg")
+        fig.savefig(outpath / "paper_figure_2.pdf")
 
 
 if __name__ == "__main__":

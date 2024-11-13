@@ -1,6 +1,5 @@
 """Plot regression scores (figure 6 of gradient alignment paper)."""
 
-from itertools import combinations_with_replacement
 from pathlib import Path
 
 import matplotlib.pyplot as plt

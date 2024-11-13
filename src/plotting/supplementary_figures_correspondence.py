@@ -4,8 +4,6 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-from seabornxt import stripboxplot
-from scipy.stats import pearsonr
 
 cm = 1 / 2.54
 

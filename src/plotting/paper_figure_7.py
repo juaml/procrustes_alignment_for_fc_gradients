@@ -1,11 +1,8 @@
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from itertools import product
-from itertools import product
 
 
 def plot_hcp_ya(data, ax, scoring_metric):
@@ -99,7 +96,7 @@ def load_classification_results():
     )
 
     classification_results_df = pd.read_csv(data_path).query(
-        f"parcellation == 'Schaefer400' &"
+        "parcellation == 'Schaefer400' &"
         " kernel == 'normalized_angle' &"
         " sparsity == 0.9 &"
         " approach == 'dm' &"

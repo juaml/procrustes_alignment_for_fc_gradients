@@ -236,9 +236,9 @@ def main():
         ax_e.set_title("e", fontweight="bold", fontsize=12, loc="left")
 
         outpath = Path("..") / ".." / "figures" / "paper"
-        fig.savefig(outpath / f"paper_figure_4.png")
-        fig.savefig(outpath / f"paper_figure_4.svg")
-        fig.savefig(outpath / f"paper_figure_4.pdf")
+        fig.savefig(outpath / "paper_figure_4.png")
+        fig.savefig(outpath / "paper_figure_4.svg")
+        fig.savefig(outpath / "paper_figure_4.pdf")
 
 
 if __name__ == "__main__":

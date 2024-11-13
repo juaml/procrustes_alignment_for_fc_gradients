@@ -1,13 +1,10 @@
 """Plot supplementary figure 1 of the paper."""
 
-from itertools import product
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-from seabornxt import stripboxplot
-from scipy.stats import pearsonr
 
 
 def load_identification_results():

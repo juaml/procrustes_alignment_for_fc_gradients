@@ -1,13 +1,11 @@
 """Plot figure 1 of the paper."""
 
-from itertools import product
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 from seabornxt import stripboxplot
-from scipy.stats import pearsonr
 
 
 def load_identification_results():
@@ -242,9 +240,9 @@ def main():
         ax_d.set_title("d", fontweight="bold", fontsize=12, loc="left")
 
         outpath = Path("..") / ".." / "figures" / "paper"
-        fig.savefig(outpath / f"paper_figure_1.png")
-        fig.savefig(outpath / f"paper_figure_1.svg")
-        fig.savefig(outpath / f"paper_figure_1.pdf")
+        fig.savefig(outpath / "paper_figure_1.png")
+        fig.savefig(outpath / "paper_figure_1.svg")
+        fig.savefig(outpath / "paper_figure_1.pdf")
 
 
 if __name__ == "__main__":
