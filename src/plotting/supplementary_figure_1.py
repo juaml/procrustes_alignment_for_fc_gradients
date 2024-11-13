@@ -97,7 +97,7 @@ def plot_between(ax):
     data_melt = data_melt.rename(
         columns={"n_components": "n of gradients used\nin alignment"}
     )
-    
+
     plot = sns.lineplot(
         data_melt,
         ax=ax,
@@ -141,7 +141,13 @@ def main():
         ax_b = plot_between(ax_b)
         ax_b.set_title("b", fontweight="bold", fontsize=12, loc="left")
 
-        outpath = Path("..") / ".." / "figures" / "supplementary" / "supplementary_figure_1"
+        outpath = (
+            Path("..")
+            / ".."
+            / "figures"
+            / "supplementary"
+            / "supplementary_figure_1"
+        )
         fig.savefig(f"{outpath}.png")
         fig.savefig(f"{outpath}.svg")
         fig.savefig(f"{outpath}.pdf")

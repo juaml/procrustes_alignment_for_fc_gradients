@@ -237,9 +237,15 @@ def main():
         ax_d.set_title("d", fontweight="bold", fontsize=12, loc="left")
 
         outpath = Path("..") / ".." / "figures" / "supplementary"
-        fig.savefig(outpath / "supplementary_figure_identification_no_ica_fix.png")
-        fig.savefig(outpath / "supplementary_figure_identification_no_ica_fix.svg")
-        fig.savefig(outpath / "supplementary_figure_identification_no_ica_fix.pdf")
+        fig.savefig(
+            outpath / "supplementary_figure_identification_no_ica_fix.png"
+        )
+        fig.savefig(
+            outpath / "supplementary_figure_identification_no_ica_fix.svg"
+        )
+        fig.savefig(
+            outpath / "supplementary_figure_identification_no_ica_fix.pdf"
+        )
 
 
 if __name__ == "__main__":

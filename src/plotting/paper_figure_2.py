@@ -76,9 +76,7 @@ def load_summary_transformation_matrices(dataset):
 
 def get_corr_df(transmat_val="transmat_abs_sum"):
     data = {
-        "Minimal": load_summary_transformation_matrices(
-            "hcp_ya_non_ica_fix"
-        ),
+        "Minimal": load_summary_transformation_matrices("hcp_ya_non_ica_fix"),
         "ICA-FIX": load_summary_transformation_matrices("hcp_ya_ica_fix"),
     }
 

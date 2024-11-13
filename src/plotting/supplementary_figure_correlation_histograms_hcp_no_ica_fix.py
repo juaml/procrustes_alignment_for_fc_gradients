@@ -1,5 +1,5 @@
-from pathlib import Path
 from itertools import product
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -94,7 +94,10 @@ def main():
         # define an outpath where to save your figures
         outpath = Path("..") / ".." / "figures" / "supplementary"
         outpath.mkdir(exist_ok=True, parents=True)
-        outname = outpath / "supplementary_figure_correlation_histograms_hcp_no_ica_fix"
+        outname = (
+            outpath
+            / "supplementary_figure_correlation_histograms_hcp_no_ica_fix"
+        )
         fig.savefig(f"{outname}.pdf")
         fig.savefig(f"{outname}.png")
         fig.savefig(f"{outname}.svg")

@@ -21,7 +21,6 @@ def load_fd():
         )
         fd_list.append(fd_data)
 
-
     hcp_data = pd.read_csv(
         data_path / "hcp_ya_framewise_displacement_by_phase_encoding.csv"
     )
@@ -54,7 +53,6 @@ def main():
         ax_a = fig.add_subplot(grid[0, 0])
         ax_a.set_title("a", fontweight="bold", fontsize=12, loc="left")
 
-        
         stripboxplot(
             data=fd,
             x="dataset",

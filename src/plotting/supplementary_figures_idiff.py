@@ -50,7 +50,6 @@ def main(parcellation, alignment):
                 f"(sparsity == {sparsity}) and (kernel == '{kernel}')"
             )
 
-
             ax = fig.add_subplot(grid[row, col])
 
             plot = sns.lineplot(
